@@ -4,6 +4,7 @@
 <title>Testing Lightning Out</title>
 </head>
 <body>
+
 <div id="video-player"></div>
 <script src="https://ability-nosoftware-8319.scratch.my.site.com/innholdsbibliotek/lightning/lightning.out.js"></script>
 <script>
@@ -11,9 +12,9 @@
   $Lightning.use('c:nksEmbeddedVideoApp',
     function () {
     $Lightning.createComponent(
-    'c:nksEmbeddedPlayer',
-    { videoId: '0691x000003WZWwAAO' }
-    ,'video-player',
+      'c:nksEmbeddedPlayer',
+      { videoId: '0691x000003WZWwAAO' }
+      ,'video-player',
       function (cmp) {
         console.log('LWC component was created');
       }

@@ -5,23 +5,7 @@
 </head>
 <body>
 
-<div id="video-player"></div>
-<script src="https://power-business-4181.scratch.my.site.com/innholdsbibliotek/lightning/lightning.out.js"></script>
-<script>
-  const lightningEndPointURI = 'https://power-business-4181.scratch.my.site.com/innholdsbibliotek';
-  $Lightning.use('c:nksEmbeddedVideoApp',
-    function () {
-    $Lightning.createComponent(
-      'c:nksEmbeddedPlayer',
-      { videoId: '0691X000002bhbOQAQ' }
-      ,'video-player',
-      function (cmp) {
-        console.log('LWC component was created');
-      }
-    );},
-  lightningEndPointURI
-  );
-</script>
+<div id="video-player"></div><script src="https://power-business-4181.scratch.my.site.com/innholdsbibliotek/lightning/lightning.out.js"></script><script>$Lightning.use('c:nksEmbeddedVideoApp',function () {$Lightning.createComponent('c:nksEmbeddedPlayer',{ videoId: '0691X000002bhbOQAQ' },'video-player',function (cmp) {console.log('Aura component was created');});},'https://power-business-4181.scratch.my.site.com/innholdsbibliotek');</script>
 
 </body>
 </html>
